@@ -16,7 +16,8 @@ html
     padding: 0 100px 0 100px;
 }
 
-nav ul
+nav ul,
+.main-info-section
 {
     display: flex;
     flex-wrap: wrap;
@@ -60,7 +61,6 @@ a
 {
     text-decoration: none;
     font-size: .9rem;
-    text-transform: uppercase;
     position: relative;
     top: 50%;
     bottom: 50%;
@@ -87,12 +87,8 @@ a
 span:hover
 {
     color: #48CFAD;
+    font-size: 3.5rem;
     transition: all .5s;
-}
-
-span.name
-{
-    color: #ED5565;
 }
 
 span.m-left
@@ -184,3 +180,18 @@ padding: 30px 0;
     align-content: center;
 }
 
+.links h2
+{
+    color: #7289DA;
+}
+
+.links h2:hover
+{
+    color: white;
+}
+
+.profile-image img
+{
+    width: 450px;
+    margin-top: 50px;
+}
