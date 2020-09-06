@@ -176,7 +176,7 @@ left: 50%;
 right: 50%;
 transform: translateX(-50%);
 z-index: 1;
-color: rgb(0, 0, 0, 1);
+color: lightgrey;
 }
 
 about-me-info h3
