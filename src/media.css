@@ -180,6 +180,18 @@ padding: 30px 0;
     align-content: center;
 }
 
+.links a:hover
+{
+    text-decoration-line: underline; 
+    color: brown;
+    transition: all .5s;
+}
+
+.links a:active
+{
+    color: lightblue;
+}
+
 .links h2
 {
     color: #7289DA;
@@ -188,6 +200,12 @@ padding: 30px 0;
 .links h2:hover
 {
     color: white;
+    transition: all .5s;
+}
+
+.links h2:hover
+{
+    text-decoration-line: underline; 
 }
 
 .profile-image img
