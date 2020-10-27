@@ -106,7 +106,8 @@ span.m-left{
 .text p{
     letter-spacing: 3px;
     word-spacing: 10px;
-    font-size: .8rem;
+    font-size: 0.8vw;
+
 }
 
 .text a {
