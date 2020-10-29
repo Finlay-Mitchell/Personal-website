@@ -86,3 +86,8 @@ body
     color: #fff;
     text-decoration: none;
 }
+
+.image-fluid
+{
+    width: 350px;
+}
