@@ -59,9 +59,10 @@ body
     background: #181818;
 }
 
-.navbar-toggler
+.navbar-toggler 
 {
-    border: none !important;
+    border-color: black !important;
+    background: #252627 !important;
 }
 
 .nav-link 
@@ -79,8 +80,8 @@ body
 
 .btn:hover
 {
-    color: red !important;
-    background-color: #007bff !important;
+    color: lightslategray !important;
+    background-color: darkslategrey !important;
 }
 
 .form-control
