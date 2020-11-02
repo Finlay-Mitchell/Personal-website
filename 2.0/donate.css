@@ -4,12 +4,22 @@
     padding: 0;
 }
 
-body 
+html
+{
+    scroll-behavior: smooth;
+}
+
+head
+{
+
+}
+
+body
 {
     background-color: #252627 !important;
 }
 
-#nav-bar 
+#nav-bar
 {
     position: sticky;
     top: 0;
@@ -21,7 +31,7 @@ body
     color: #707070 !important;
 }
 
-.navbar-brand img 
+.navbar-brand img
 {
     height: 40px;
     padding-left: 30px;
@@ -32,30 +42,30 @@ body
     padding: 0 10px;
 }
 
-/* .navbar-nav li a 
+/* .navbar-nav li a
 {
     float: right;
     text-align: left;
 } */
 
-#nav-bar ul li a:hover 
+#nav-bar ul li a:hover
 {
     color: #007bff !important;
 }
 
-.navbar 
+.navbar
 {
     /* background: #252627; */
     background: #181818;
 }
 
-.navbar-toggler 
+.navbar-toggler
 {
     border-color: black !important;
     background: #707070 !important;
 }
 
-.nav-link 
+.nav-link
 {
     color: #555 !important;
     font-weight: 600;
@@ -80,43 +90,6 @@ body
     border-color: #252627 !important;
 }
 
-
-.contact h1
-{
-    text-align: center;
-    color: grey;
-}
-
-.contact
-{
-    margin-top: 50px;
-}
-
-.contact input,
-.contact form textarea
-{
-    display: block;
-    max-width: 500px;
-    padding: 20px;
-    background-color: #252627;
-    border: 3px solid #707070;
-    margin: 35px 0;
-    font-size: 1.2rem;
-    color: #fff;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-}
-
-form input:last-child
-{
-    width: 150px;
-    background-color: #ED5565;
-    border: none;
-    cursor: pointer;
-}
-
 footer hr
 {
     border: 2px solid #707070;
@@ -131,40 +104,21 @@ footer p
     padding: 30px 0;
 }
 
-.col-xl-8 h1 
+.donate-button h1 
 {
-    color: black;
-    text-shadow: green;
-    text-shadow: -1px -1px 0 grey, 1px -1px 0 slategray, -1px 1px 0 darkgrey, 1px 1px 0 slategray;
+    color: white;
     text-align: center;
 }
 
-.lead 
+.donate-button p 
 {
     color: white;
+    text-align: center;
+
+
 }
 
-.controls
+.donate-button
 {
-    color: whitesmoke;
-}
-
-.col-md-12 
-{
-    border-color: red !important;
-}
-
-.controls input 
-{
-    border-color: wheat !important;
-}
-
-.col-md-12 .form-control 
-{
-    border-color: wheat !important;
-}
-
-.form-group .form-control
-{
-    border-color: wheat !important;
+    align-content: center;
 }

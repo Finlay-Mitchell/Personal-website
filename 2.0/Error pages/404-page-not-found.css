@@ -1,153 +1,174 @@
-*, :before, :after {
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+/*Variables */
+.left-section .inner-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+* {
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  display: flex;
-  align-items: center;
-  background: #000000/*#E3F2FD*/;
-  min-width: 275px;
-  height: 100vh;
-  margin: 0 10vw;
-  overflow: hidden;
-  color: #4B4B4B/*#138FF2*/;
-  font-family: Roboto;
+  font-family: "Fira Sans", sans-serif;
+  color: #f5f6fa;
 }
 
-.wrapper {
-  flex-grow: 2;
-  width: 40vw;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-h1 {
-  margin: 0;
-  font-size: 6em;
-  font-weight: 100;
-}
-
-.fof h1
-{
-  margin: 0;
-  font-size: 10em;
-  font-weight: 100;
-  text-align: right;
-}
-
-.fof h4
-{
-  margin: 0;
-  font-weight: 100;
-  text-align: right;
-}
-
-p {
-  width: 95%;
-  font-size: 1.5em;
-  line-height: 1.4;
-}
-
-.buttons
-{
-  white-space: nowrap;
-  display: inline-block;
-}
-
-span {
-  display: block;
-  text-transform: uppercase;
-  color: #4B4B4B;
-  letter-spacing: 1.5px;
-  text-align: center;
-}
-
-a {
-  display: inline-block;
-  padding: .8em 1em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  border: 3px solid #4B4B4B;
-  color: #4B4B4B;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: .2em;
-  position: relative;
-  overflow: hidden;
-  transition: .3s;
-}
-a:hover {
-  color: #818181;
-}
-a:hover:before {
+.background {
+  position: absolute;
   top: 0;
-}
-a:before {
-  content: '';
-  background: #4B4B4B;
-  height: 100%;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background: linear-gradient(#0C0E10, #446182);
+}
+.background .ground {
   position: absolute;
-  top: -100%;
-  left: 0;
-  transition: .3s;
-  z-index: -1;
+  bottom: 0;
+  width: 100%;
+  height: 25vh;
+  background: #0C0E10;
 }
-
-.space {
-  width: 75px;
-  height: calc(50vh + 37.5px);
-  border-top-left-radius: 37.5px;
-  border-top-right-radius: 37.5px;
-  overflow: hidden;
-  margin: calc(50vh - 37.5px) auto 0 auto;
-  position: relative;
-  pointer-events: none;
-  -webkit-transform: translateZ(0);
-}
-
-.blackhole {
-  border: 5px solid #4B4B4B;
-  height: 75px;
-  width: 75px;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.blackhole:after {
-  content: '';
-  height: calc(100% + 10px);
-  width: calc(100% + 10px);
-  border: 5px solid #313131;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  z-index: 5;
-  transform: rotate(45deg);
-}
-
-.ship {
-  height: 150px;
-  width: 55px;
-  margin-left: 10px;
-  background: url("https://cbwconline.com/IMG/Codepen/Space%20Ship.svg") center/contain no-repeat;
-  animation: blackhole 4s infinite linear;
-  position: absolute;
-  bottom: -150px;
-}
-
-@keyframes blackhole {
-  to {
-    transform: translateY(-100vh);
+@media (max-width: 770px) {
+  .background .ground {
+    height: 0vh;
   }
 }
-@media (max-width: 600px) {
-  body {
-    margin: 0 5vw;
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 85%;
+  height: 100vh;
+  padding-bottom: 25vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 770px) {
+  .container {
+    flex-direction: column;
+    padding-bottom: 0vh;
+  }
+}
+
+.left-section, .right-section {
+  position: relative;
+}
+
+.left-section {
+  width: 40%;
+}
+@media (max-width: 770px) {
+  .left-section {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+  }
+}
+@media (max-width: 770px) {
+  .left-section .inner-content {
+    position: relative;
+    padding: 1rem 0;
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 9em;
+  line-height: 1.3em;
+  margin: 2rem 0 0.5rem 0;
+  padding: 0;
+  text-shadow: 0 0 1rem #fefefe;
+}
+@media (max-width: 770px) {
+  .heading {
+    font-size: 7em;
+    line-height: 1.15;
+    margin: 0;
+  }
+}
+
+.subheading {
+  text-align: center;
+  max-width: 480px;
+  font-size: 1.5em;
+  line-height: 1.15em;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+@media (max-width: 770px) {
+  .subheading {
+    font-size: 1.3em;
+    line-height: 1.15;
+    max-width: 100%;
+  }
+}
+
+.right-section {
+  width: 50%;
+}
+@media (max-width: 770px) {
+  .right-section {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.svgimg {
+  position: absolute;
+  bottom: 0;
+  padding-top: 10vh;
+  padding-left: 1vh;
+  max-width: 100%;
+  max-height: 100%;
+}
+@media (max-width: 770px) {
+  .svgimg {
+    padding: 0;
+  }
+}
+.svgimg .bench-legs {
+  fill: #0C0E10;
+}
+.svgimg .top-bench, .svgimg .bottom-bench {
+  stroke: #0C0E10;
+  stroke-width: 1px;
+  fill: #5B3E2B;
+}
+.svgimg .bottom-bench path:nth-child(1) {
+  fill: #432d20;
+}
+.svgimg .lamp-details {
+  fill: #202425;
+}
+.svgimg .lamp-accent {
+  fill: #2c3133;
+}
+.svgimg .lamp-bottom {
+  fill: linear-gradient(#202425, #0C0E10);
+}
+.svgimg .lamp-light {
+  fill: #EFEFEF;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 1rem #fefefe;
+  }
+  50% {
+    text-shadow: 0 0 1.85rem #ededed;
+  }
+  100% {
+    text-shadow: 0 0 1rem #fefefe;
   }
 }
