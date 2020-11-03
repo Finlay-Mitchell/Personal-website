@@ -133,9 +133,9 @@ footer p
 
 .col-xl-8 h1 
 {
-    color: black;
-    text-shadow: green;
-    text-shadow: -1px -1px 0 grey, 1px -1px 0 slategray, -1px 1px 0 darkgrey, 1px 1px 0 slategray;
+    color: grey;
+    font-weight: 600;
+    /* text-shadow: -1px -1px 0 grey, 1px -1px 0 slategray, -1px 1px 0 darkgrey, 1px 1px 0 slategray; */
     text-align: center;
 }
 
@@ -149,22 +149,8 @@ footer p
     color: whitesmoke;
 }
 
-.col-md-12 
-{
-    border-color: red !important;
-}
-
-.controls input 
-{
-    border-color: wheat !important;
-}
-
-.col-md-12 .form-control 
-{
-    border-color: wheat !important;
-}
 
 .form-group .form-control
 {
-    border-color: wheat !important;
+    border-color: grey !important;
 }

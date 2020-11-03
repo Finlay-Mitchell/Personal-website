@@ -95,15 +95,15 @@
                       <div class="row">
                           <div class="col-md-6">
                               <div class="form-group">
-                                  <label for="form_name">Firstname *</label>
-                                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                  <label for="form_name">Firstname</label>
+                                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname" required="required" data-error="Firstname is required.">
                                   <div class="help-block with-errors"></div>
                               </div>
                           </div>
                           <div class="col-md-6">
                               <div class="form-group">
-                                  <label for="form_lastname">Lastname *</label>
-                                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                  <label for="form_lastname">Lastname</label>
+                                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname" required="required" data-error="Lastname is required.">
                                   <div class="help-block with-errors"></div>
                               </div>
                           </div>
@@ -111,30 +111,45 @@
                       <div class="row">
                           <div class="col-md-6">
                               <div class="form-group">
-                                  <label for="form_email">Email *</label>
-                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                  <label for="form_email">Email</label>
+                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
                                   <div class="help-block with-errors"></div>
                               </div>
                           </div>
                           <div class="col-md-6">
                               <div class="form-group">
-                                  <label for="form_need">Please specify your need *</label>
+                                  <label for="form_need">Please specify your need</label>
                                   <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                      <option value=""></option>
-                                      <option value="Request quotation">Request quotation</option>
-                                      <option value="Request order status">Request order status</option>
+                                    <option value="Other">Other</option>
+                                    <option value="Request quotation">Request quotation</option>
+                                      <option value="Request meeting">Request order status</option>
                                       <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                      <option value="Other">Other</option>
                                   </select>
                                   <div class="help-block with-errors"></div>
                               </div>
                           </div>
                       </div>
                       <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_number">Number</label>
+                                <input id="form_number" type="tel" name="Number" class="form-control" placeholder="Enter your phone number (optional)">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_url">URL</label>
+                                <input id="form_url" type= "url" name="url" placeholder="URL (optional)" class="form-control">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="row">
                           <div class="col-md-12">
                               <div class="form-group">
-                                  <label for="form_message">Message *</label>
-                                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                  <label for="form_message">Message</label>
+                                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required="required" data-error="Please, leave us a message."></textarea>
                                   <div class="help-block with-errors"></div>
                               </div>
                           </div>
@@ -142,19 +157,10 @@
                               <input type="submit" class="btn btn-success btn-send" value="Send message">
                           </div>
                       </div>
-                      <div class="row">
-                          <div class="col-md-12">
-                              <p class="text-muted">
-                                  <strong>*</strong> These fields are required.</p>
-                          </div>
-                      </div>
                   </div>
-              
               </form>
             </div>
-
         </div>
-
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -169,7 +175,7 @@
 
       <footer>
           <hr>
-          <p>2020 Copyright. All Rights Reserved</p>
+          <p>2020 Copyright&copy;. All Rights Reserved</p>
       </footer>
 
     </body>
