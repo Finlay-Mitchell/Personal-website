@@ -154,3 +154,8 @@ footer p
 {
     border-color: grey !important;
 }
+
+.container p 
+{
+    text-align: center;
+}
