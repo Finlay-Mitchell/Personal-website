@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html l lang = "en">
   <head>
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177321543-1"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-177321543-1');
+      </script>
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
       <meta charset = "UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title> Finlay Mitchell </title>
+      <title> Finlay Mitchell portfolio</title>
       <link rel="shortcut icon" type="image/x-icon" href="../Media/code.png">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -16,7 +25,6 @@
       <link href="../CSS/style.css" rel="stylesheet">
       <link href="../CSS/theme.css" rel="stylesheet">
       <script src="../Javascript/global.js"></script>
-
     </head>
 
     <body>
@@ -26,7 +34,7 @@
             <a class = "navbar-brand" href="#">Finlay Mitchell</a>
             <ul class="nav navbar-nav">
               <li><a class="hoverable btn btn-primary" href="https://finlaymitchell.ml" target="_blank">Home</a></li>
-              <li><a class="hoverable btn btn-primary" href="https://finlaymitchell.ml/contact" target="_blank">Contact!</a></li>
+              <li><a class="hoverable btn btn-primary" href="https://finlaymitchell.ml/contact" target="_blank">Contact</a></li>
               <li><a class="hoverable btn btn-primary" href="https://finlaymitchell.ml/links" target="_blank">Links</a></li>
               <li><a class="hoverable btn btn-primary" href="https://finbot.finlaymitchell.ml" target="_blank">FinBot bot website</a></li>
             </ul>
@@ -36,8 +44,6 @@
             <hr>
         </div>
       </div>
-
-
 
       <section>
         <div class="container">
@@ -52,19 +58,28 @@
                     </a>
                   <div class="collapse" id="collapse1">
                     <div class="card card-body">
-                      Hello, my name is Finlay and I am a 16 year old software developer from England with a strong passion for software development. I have
-                      worked on a wide variety of different projects ranging from communal Discord bots, websites(this one included) and games. I have skills in the following areas:
+                      Hello, my name is Finlay and I am a 16 year old software developer from England with a strong passion for software and technology. I have
+                      worked on a wide variety of different projects ranging from communal Discord bots, websites(this one included) and games. I have developed 
+                      skills in the following areas:<br><br>
                       <ul class="skills-list">
-                      <li>C/C++</li>
+                      <!-- <li>C/C++</li>
                       <li>C#</li>
                       <li>Arduino/robotics</li>
                       <li>HTML/CSS/JS</li>
                       <li>MySql/Sqlite/MongoDB</li>
                       <li>AWS/Azure</li>
-                      <li>IIS(IISNode)</li>
-                      </ul>
+                      <li>IIS(IISNode)</li> -->
+                      <li>Experience in software development with languages such as C/C++; C#; Arduino; node.js and more!</li>
+                      <li>Database management/infrastructure with multiple SQL flavours & MongoDB.</li>
+                      <li>Web development using HTML/CSS/JS hosted on IIS(running IISNode web services to allow for my node.js webservice to run) and
+                        even collecting analytical data with Google analytics.</li>
+                      <li>using, building and integration with cloud services such as Amazon AWS and Microsoft Azure.</li>
+                      <li>Design and development of robotics and embedded systems.</li>
+                      </ul><br>
                       I aspire to become a professional software developer and am always learning new skills/building on my pre-existing skills so I can be as ready as possible to walk into any environment
-                      and perform well.
+                      and perform well.<br><br>In my time of working in large communities to develop tools, I have learned essential skills in working close with other developers 
+                      as a team to create powerful and successful products, and have learned how to walk into a new environment and adapt and work with closely with the other 
+                       developers in a very short period of time.
                     </div>
                   </div>
                 </div>
@@ -87,24 +102,93 @@
                   <a class="card-title btn btn-primary" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse">
                     Discord work ˬ
                   </a>
+                  <img class="img-fluid" src="../Media/Discord-Logo.png" alt="Discord logo">
                 <div class="collapse" id="collapse2">
                   <div class="card card-body">
+                    <p>
                     Discord is a large and growing chat platform which enables you to join and/or make up to 100 of your own chatrooms called servers where you can build communities, but most 
-                    importatly, there's an API available to allow us to interact with said community via a bot. 
+                    importatly, there's a free REST API available to allow us to interact with said community via a bot. 
                     My bots bots are asynchronous and interfaces with the Discord rest API that can sometimes handle up to 30 requests per second. I do many things with these bots and
                      use regular expressions to sanitise input to the commands as well as internal checks that cannot be injected. I use the: <a href = "https://github.com/discord-net/Discord.Net/" target = "_blank">Discord.net;</a>
                      <a href ="https://github.com/Rapptz/discord.py" target = "_blank">Discord.py</a> and <a href = "https://github.com/discordjs/discord.js/" target = "_blank">Discord.js</a> 
-                     wrappers to interact with said API to do a variety of different tasks. More info on my Discord work can be found at <a href="https://finbot.finlaymitchell.ml" target="_blank">My bots website.</a>
-                    </ul>
+                     wrappers to interact with said API to do a variety of different tasks. More info on my Discord work can be found on <a href="https://finbot.finlaymitchell.ml" target="_blank">My personal bots website.</a>
+                    </p></ul>
                   </div>
                 </div>
-                <img class="img-fluid" src="../Media/Discord-Logo.png" alt="Image of enabling levelling and setting levelling channel">
                 </div>
               </div>
             </div>
           </div>
         </div>
     </section>
+
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card-block">
+                <div class="card-block">
+                  <img class="img-fluid" src="../Media/robotics.png" alt="Robotics image">
+                  <a class="card-title btn btn-primary" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse">
+                    Robotics ˬ
+                  </a>
+                <div class="collapse" id="collapse3">
+                  <div class="card card-body">
+                    I have experience in working on robotics projects, from designing and developing the hardware to producing the partnering software 
+                    and putting it together to create interesting projects, for example, interfacing to a buggy and allowing it to work with custom object detection
+                    and object avoidance using proprietary software and ultrasonic censors - and currently working on a computer vision system using an ESP-32 
+                    camera module running a webserver.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card-block">
+                <a class="card-title btn btn-primary" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse">
+                  Community work ˬ
+                </a>
+                <img class="img-fluid" src="../Media/communal.png" alt="Community logo">
+              <div class="collapse" id="collapse4">
+                <div class="card card-body">
+                  <p>
+                      I have experience developing software for large userbases, largely for communities, developing administration tools and management tools for 
+                      these large communities with thousands of active members each! The bots I have developed are used by well over 100,000 separate users
+                       in over 1,000 independant guilds! <br><br>Throughout my time developing communal services for users, I have learned to develop software 
+                       under pressure  of real users depending on my services running, meaning I have learned how to troubleshoot problems and resolve them in as 
+                       short of a timespan as possible in order to keep my services running with an impressive uptime.
+                  </p>
+                </ul>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <footer>
           <hr>

@@ -257,3 +257,13 @@ footer button
     width: 15%;
     height: auto;
 }
+
+.container .card .card-body a
+{
+  color: lightblue !important;
+}
+
+.container .card .card-body p 
+{
+  display: block !important;
+}
